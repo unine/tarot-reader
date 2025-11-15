@@ -7,13 +7,15 @@
     SettingsIcon,
     ArrowLeftFromLineIcon,
     ArrowRightFromLineIcon,
+    SunIcon,
+    MoonIcon,
   } from "@lucide/svelte";
   import * as Sidebar from "$lib/components/ui/sidebar/index.js";
   import { useSidebar } from "$lib/components/ui/sidebar/index.js";
+  import { toggleMode } from "mode-watcher";
+  import { Button } from "$lib/components/ui/button/index.js";
 
   const sidebar = useSidebar();
-
-  console.log(sidebar.toggle);
 
   // Menu items.
   const items = [
@@ -26,21 +28,49 @@
 </script>
 
 <Sidebar.Root collapsible="icon">
-  <Sidebar.Header class="flex items-center justify-between p-4 border-b">
+  <Sidebar.Header
+    class="flex items-center justify-between border-b {sidebar.state ===
+    'expanded'
+      ? 'p-4'
+      : ''}"
+  >
     <div class="flex justify-between items-center w-full">
       {#if sidebar.open}
         <h3 class="">Tarot Reaader</h3>
       {/if}
-      <button
-        class="hover:cursor-pointer ml-auto"
-        onclick={() => sidebar.toggle()}
-      >
-        {#if sidebar.open}
-          <ArrowLeftFromLineIcon class="w-4" />
-        {:else}
-          <ArrowRightFromLineIcon class="w-4" />
-        {/if}
-      </button>
+      <div class="flex flex-wrap gap-1.5">
+        <Button
+          onclick={toggleMode}
+          variant="outline"
+          size="icon"
+          class="size-8"
+        >
+          <SunIcon
+            class="h-4 w-4 rotate-0 scale-100 !transition-all dark:-rotate-90 dark:scale-0"
+          />
+          <MoonIcon
+            class="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 !transition-all dark:rotate-0 dark:scale-100"
+          />
+          <span class="sr-only">Toggle theme</span>
+        </Button>
+        <Button
+          onclick={() => sidebar.toggle()}
+          variant="outline"
+          size="icon"
+          class="size-8"
+        >
+          {#if sidebar.state === "expanded"}
+            <ArrowLeftFromLineIcon
+              class="h-4 w-4 transition-transform duration-200"
+            />
+          {:else}
+            <ArrowRightFromLineIcon
+              class="h-4 w-4 transition-transform duration-200"
+            />
+          {/if}
+          <span class="sr-only">Toggle Sidebar</span>
+        </Button>
+      </div>
     </div>
   </Sidebar.Header>
 

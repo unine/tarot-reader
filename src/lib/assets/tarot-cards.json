@@ -1,0 +1,136 @@
+{
+  "majorArcana": [
+    {
+      "id": 0,
+      "name": "The Fool",
+      "image": "00-TheFool.png",
+      "meaning": "New beginnings, innocence, spontaneity"
+    },
+    {
+      "id": 1,
+      "name": "The Magician",
+      "image": "01-TheMagician.png",
+      "meaning": "Manifestation, resourcefulness, power"
+    },
+    {
+      "id": 2,
+      "name": "The High Priestess",
+      "image": "02-TheHighPriestess.png",
+      "meaning": "Intuition, sacred knowledge, divine feminine"
+    },
+    {
+      "id": 3,
+      "name": "The Empress",
+      "image": "03-TheEmpress.png",
+      "meaning": "Femininity, beauty, nature"
+    },
+    {
+      "id": 4,
+      "name": "The Emperor",
+      "image": "04-TheEmperor.png",
+      "meaning": "Authority, establishment, structure"
+    },
+    {
+      "id": 5,
+      "name": "The Hierophant",
+      "image": "05-TheHierophant.png",
+      "meaning": "Spiritual wisdom, religious beliefs, conformity"
+    },
+    {
+      "id": 6,
+      "name": "The Lovers",
+      "image": "06-TheLovers.png",
+      "meaning": "Love, harmony, relationships"
+    },
+    {
+      "id": 7,
+      "name": "The Chariot",
+      "image": "07-TheChariot.png",
+      "meaning": "Control, willpower, determination"
+    },
+    {
+      "id": 8,
+      "name": "Strength",
+      "image": "08-Strength.png",
+      "meaning": "Strength, courage, persuasion"
+    },
+    {
+      "id": 9,
+      "name": "The Hermit",
+      "image": "09-TheHermit.png",
+      "meaning": "Soul searching, introspection, inner guidance"
+    },
+    {
+      "id": 10,
+      "name": "Wheel Of Fortune",
+      "image": "10-WheelOfFortune.png",
+      "meaning": "Good luck, karma, life cycles"
+    },
+    {
+      "id": 11,
+      "name": "Justice",
+      "image": "11-Justice.png",
+      "meaning": "Justice, fairness, truth"
+    },
+    {
+      "id": 12,
+      "name": "The Hanged Man",
+      "image": "12-TheHangedMan.png",
+      "meaning": "Suspension, restriction, letting go"
+    },
+    {
+      "id": 13,
+      "name": "Death",
+      "image": "13-Death.png",
+      "meaning": "Endings, beginnings, change"
+    },
+    {
+      "id": 14,
+      "name": "Temperance",
+      "image": "14-Temperance.png",
+      "meaning": "Balance, moderation, patience"
+    },
+    {
+      "id": 15,
+      "name": "The Devil",
+      "image": "15-TheDevil.png",
+      "meaning": "Bondage, addiction, sexuality"
+    },
+    {
+      "id": 16,
+      "name": "The Tower",
+      "image": "16-TheTower.png",
+      "meaning": "Sudden change, upheaval, chaos"
+    },
+    {
+      "id": 17,
+      "name": "The Star",
+      "image": "17-TheStar.png",
+      "meaning": "Hope, faith, purpose"
+    },
+    {
+      "id": 18,
+      "name": "The Moon",
+      "image": "18-TheMoon.png",
+      "meaning": "Illusion, fear, anxiety"
+    },
+    {
+      "id": 19,
+      "name": "The Sun",
+      "image": "19-TheSun.png",
+      "meaning": "Joy, success, celebration"
+    },
+    {
+      "id": 20,
+      "name": "Judgement",
+      "image": "20-Judgement.png",
+      "meaning": "Judgement, rebirth, inner calling"
+    },
+    {
+      "id": 21,
+      "name": "The World",
+      "image": "21-TheWorld.png",
+      "meaning": "Completion, accomplishment, travel"
+    }
+  ]
+}

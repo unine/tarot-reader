@@ -1,6 +1,7 @@
 <script>
   import "../app.css";
   import favicon from "$lib/assets/favicon.svg";
+  import { ModeWatcher } from "mode-watcher";
   import * as Sidebar from "$lib/components/ui/sidebar/index.js";
   import AppSidebar from "$lib/components/app-sidebar.svelte";
 
@@ -11,6 +12,7 @@
   <link rel="icon" href={favicon} />
 </svelte:head>
 
+<ModeWatcher />
 <Sidebar.Provider>
   <AppSidebar />
   <Sidebar.Inset>
